@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "img2webp"
-version = "0.1.0"
+version = "0.1.1"
 description = "A tool to convert images to WebP format with both GUI and CLI interfaces"
 readme = "README.md"
 authors = [{name = "Bert Rico, ByteWise Analytics", email = "support@bytewise.app"}]
