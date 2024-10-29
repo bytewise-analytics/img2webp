@@ -1,9 +1,11 @@
-[
-project
-]
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
 name = "img2webp"
 version = "0.1.0"
-description = "A GUI tool to convert images to WebP format"
+description = "A tool to convert images to WebP format with both GUI and CLI interfaces"
 readme = "README.md"
 authors = [{name = "Your Name", email = "your.email@example.com"}]
 license = {file = "LICENSE"}
@@ -12,20 +14,19 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Environment :: GUI :: Tkinter",
+    "Environment :: Console",
 ]
-keywords = ["image", "converter", "webp", "gui"]
+keywords = ["image", "converter", "webp", "gui", "cli"]
 dependencies = [
     "Pillow>=9.0.0",
+    "setuptools>=45",
 ]
 requires-python = ">=3.7"
 
-[
-project.scripts
-]
+[project.scripts]
 img2webp = "img2webp.gui:main"
+img2webp-cli = "img2webp.cli:main"
 
-[
-project.urls
-]
-"Homepage" = "https://github.com/yourusername/img2webp"
-"Bug Tracker" = "https://github.com/yourusername/img2webp/issues"
+[project.urls]
+homepage = "https://github.com/bytewise-analytics/img2webp"
+issues = "https://github.com/bytewise-analytics/img2webp/issues"
