@@ -1,0 +1,31 @@
+[
+project
+]
+name = "img2webp"
+version = "0.1.0"
+description = "A GUI tool to convert images to WebP format"
+readme = "README.md"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: GUI :: Tkinter",
+]
+keywords = ["image", "converter", "webp", "gui"]
+dependencies = [
+    "Pillow>=9.0.0",
+]
+requires-python = ">=3.7"
+
+[
+project.scripts
+]
+img2webp = "img2webp.gui:main"
+
+[
+project.urls
+]
+"Homepage" = "https://github.com/yourusername/img2webp"
+"Bug Tracker" = "https://github.com/yourusername/img2webp/issues"
